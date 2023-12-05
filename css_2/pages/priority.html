@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  
+            color: red;
+        }
+        div{
+            background-color: #cccccc;
+            padding:2em;
+        }
+        p {
+            color:coral;
+        }
+        .test1{
+            color:yellow;
+        }
+        #test2{
+            color:green;
+        }
+        .test3{
+            color:violet !important;
+        }
+        span {
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        색상 변경 우선 순위<span>(전체)</span>
+        <p>색상 변경 우선 순위<span>(태그)</span></p>
+        <p class="test1">색상 변경 우선 순위<span>(클래스)</span></p>
+        <p class="test1" id="test2">색상 변경 우선 순위<span>(아이디)</span></p>
+        <p class="test1" id="test2" style="color:blue;">색상 변경 우선 순위<span>(직접 적용)</span></p>    
+        <p class="test3" id="test2" style="color:blue;">색상 변경 우선 순위<span>(!important)</span></p>
+    </div>
+    <p style="color:black;">스타일 시트를 만들고 난 후 링크로 된 스타일 시트가 로드되면 덮어씌워질 수 있으므로<br>
+    내 스타일 시트를 가장 마지막에 넣도록 한다.</p>
+    
+</body>
+</html>

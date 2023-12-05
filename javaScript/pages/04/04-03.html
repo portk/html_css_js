@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function execute() {
+            function changeName(name) {
+                name = "tom";
+                return name;
+            }
+            function changeNameByObject(obj) {
+                obj.name = 'john'
+            }
+            let name = "jane";
+            let user = { name: "james"};
+            console.log(name);
+            console.log(changeName(name));
+            console.log(user);
+            changeNameByObject(user);
+            console.log(user);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="execute()">실행</button>
+</body>
+</html>

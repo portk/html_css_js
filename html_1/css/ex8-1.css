@@ -1,0 +1,20 @@
+div {
+    border-collapse: collapse;
+    border: solid 1px red;
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.box2 {
+    text-align: right;
+}
+
+.box3 {
+    text-align: center;
+}
+
+img {
+    width: 800px;
+    height: 800px;
+}

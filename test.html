@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let s="test is good to improve yours";
+    let words = s.split(" ")
+    result=""
+    words.forEach( val =>{
+        for (let i=0; i < val.length ; i++){
+            if (i %2 == 0){
+                result += val[i].toUpperCase()
+            } else {
+                result += val[i].toLowerCase()
+            }
+        }
+        if (val != words[words.length-1]){
+            result += " "
+        }
+        console.log(result)
+    })
+//    console.log(result)
+//    var words = s.split(" ");
+//    for (let i=0; i < words.length; i++){
+//        for (let j = 0 ; j < words[i].length ; j++){
+//            if (j % 2 == 0){
+//                words[i] = words[i].replace(words[i][j],words[i][j].toUpperCase())
+//            } else {
+//                words[i] = words[i].replace(words[i][j],words[i][j].toLowerCase())
+//            }
+//        }
+//    }
+//    console.log(words.join(" "));
+
+</script>
+</html>

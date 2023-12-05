@@ -1,0 +1,22 @@
+body {
+    font-family: "돋음";
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    line-height:180%;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    color:green;
+    background-color:rgb(255, 255, 0);
+}
+
+table {
+    background-color:rgb(233, 255, 210);
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        const formData = new FormData();
+        formData.append('key', 'value');
+        // fetch가 XMLHttpRequest()를 대체함
+        const ajax = fetch('http://ggoreb.com/ajax/html/data2.jsp', { method: 'post', body: formData });
+        ajax.then((response) => { return response.text(); }).then((result) => { document.getElementById('content').innerHTML=result; console.log(result); });
+    </script>
+</body>
+</html>

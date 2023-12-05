@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid; grid-gap: 10px;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+        }
+        div > div {
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+            padding: 10px; border-radius: 5px;
+        }
+        #zero {
+            grid-column: 1/4;
+        }
+        #enter {
+            grid-column:4;
+            grid-row: 4/6;
+        }
+        #del {
+            grid-column: 4;
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="plus">+</div><div id="sub">-</div><div id="mul">x</div><div id="div">÷</div>
+        <div id="del">del</div><div id="enter">Enter</div>
+        <div>7</div><div>8</div><div>9</div>
+        <div>4</div><div>5</div><div>6</div>
+        <div>1</div><div>2</div><div>3</div>
+        <div id="zero">0</div>
+    </div>
+    <h1></h1>
+    <button>clear</button>
+</body>
+<script>
+    let x=0;
+    let y=0;
+    let inputVal="";
+    let plusfunc = (x,y) => {return x+y};
+    let subfunc = (x,y) => {return x-y};
+    let mulfunc = (x,y) => {return x*y};
+    let divfunc = (x,y) => {return x/y};
+    let plus = document.querySelector('#plus');
+    let sub = document.querySelector('#sub');
+    let mul = document.querySelector('#mul');
+    let div = document.querySelector('#div');
+    let pad = document.querySelectorAll('div > div');
+    let del = document.querySelector("#del");
+    let enter = document.querySelector("#enter");
+    let h1 = document.querySelector('h1');
+    let btn = document.querySelector('button');
+    let calcMod=0;
+    for (let i = 6; i < pad.length; i++){
+        pad[i].addEventListener('click',() => {inputVal += pad[i].innerText; h1.innerText += pad[i].innerText});
+    }
+    // 몇몇 부속을 수정하고 가려놓은 것을 살리면 사칙연산 순서를 틀린채 왼쪽에서 오른쪽으로 선형적인 계산은 된다.
+
+//    checker = function () {
+//        if (x==0){
+//            x=Number(inputVal);
+//        } else if (y==0){
+//            y=Number(inputVal);
+//        } else {
+//            switch(calcMod){
+//                case 1 : x += y; break;
+//                case 2 : x -= y; break;
+//                case 3 : x *= y; break;
+//                case 4 : x /= y; break;
+//            }
+//            y=Number(inputVal);
+//        }
+//        inputVal = "";
+//    }
+    plus.addEventListener('click', () => {
+//        checker()
+//        calcMod=1;
+        h1.innerText += '+';
+        });
+    sub.addEventListener('click', () => {
+//        checker()
+//        calcMod=2;
+        h1.innerText += '-';
+        });
+    mul.addEventListener('click', () => {
+//        checker()
+//        calcMod=3;
+        h1.innerText += '*';
+        });
+    div.addEventListener('click', () => {
+//        checker()
+//        calcMod=4;
+        h1.innerText += '/';
+        });
+    enter.addEventListener('click', () => {
+//        if (calcMod == 1) {
+//            x = x + y + Number(inputVal);
+//        } else if(calcMod == 2) {
+//            x = x - y - Number(inputVal);
+//        } else if(calcMod == 3) {
+//            x = x * y * Number(inputVal);
+//        } else if(calcMod == 4) {
+//            x = x / y / Number(inputVal);
+//        }
+//        h1.innerText=x;
+//        y=0;
+//        calcMod=0;
+        h1.innerText = eval(h1.innerText);
+    })
+    del.addEventListener('click', () => {
+//        if (inputVal.length > 0) {
+//            inputVal = inputVal.slice(0,-1);
+//            h1.innerText= h1.innerText.slice(0,-1);
+//        }
+        h1.innerText= h1.innerText.slice(0,-1);
+    });
+    btn.addEventListener('click', () => {
+//        x=0;
+//        y=0;
+//        inputVal="";
+        h1.innerText="";
+    });
+</script>
+</html>

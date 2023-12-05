@@ -1,0 +1,36 @@
+#a, #b, #c, #d {
+    width:200px;
+    height:100px;
+    color:white;
+    text-align: center;
+    margin: 10px;
+}
+
+div{
+    border: solid 1px black;
+    margin: 0px auto;
+}
+
+#main {
+    align-items: center;
+}
+
+#a {
+    background-color: green;
+    float:left;
+}
+
+#b {
+    background-color: green;
+    float:left;
+}
+
+#c {
+    background-color: blue;
+    float: left;
+}
+
+#d {
+    background-color: red;
+    float: left;
+}

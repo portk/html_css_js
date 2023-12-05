@@ -1,0 +1,45 @@
+<!--
+    웹에서의 전달방식
+    1. 겟 (get)
+        google.com/search?q= 같은 방식이 겟
+        q라는 이름이 닌텐도 스위치로 받아지면서 호출을 해준다.
+        폼에서 작동을 함.
+        q는 그냥 변수이므로 자유롭게 해도 됨
+
+    2. 포스트 (post)
+        데이터만 보내면 감싸져서 보내지는 것
+
+    폼 태그는 너 가는 이이디, 값 등이 뭐야? 에서 그걸 받는다
+
+    서버                클라이언트
+    폼            →       양식
+    중복확인      ←       입력값
+    가능/불가능   →       출력
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3-9</title>
+</head>
+<body>
+    <p><a href="../index.html">목록보기</a></p>
+    <h3>form문 활용</h3>
+    <!-- 필요한것: action, method(안적으면 get, 틀려도 get), name, value 
+    action=url(상대, 절대)
+    method(post, get)
+    name(서버에서 받을 이름 → 서버에 맞춰줘야 함)
+    value(보낼 값)
+    'https://www.google.com/search?q=%EA%B3%A0%EC%96%91%EC%9D%B4' 로 예시를 들면
+    https://www.google.com/search   url
+    ?                               method
+    q                               name
+    value                           value
+    -->
+    <form action="https://www.google.com/search" method="get">
+        검색어 : <input type="text" name="q">
+    </form>
+</body>
+</html>

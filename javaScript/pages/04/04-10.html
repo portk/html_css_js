@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .figure {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            transition-duration: 1s;
+        }
+        h2 {
+            font-size: 30px;
+            transition-duration: 1s;
+        }
+    </style>
+    <script defer>
+        function callback() {
+            const labels = document.getElementsByClassName('label');
+            for (let i = 0; i < labels.length; i++) {
+                labels[i].innerHTML='<h2>모습 변경 후</h2>';
+            }
+
+            const figures = document.getElementsByClassName('figure');
+            for (let i = 0; i < figures.length; i++) {
+                figures[i].style.backgroundColor = 'red';
+                figures[i].style.borderRadius = '100px';
+            }
+            
+        }
+
+        setTimeout(callback, 2000);
+    </script>
+</head>
+<body>
+    <button type="buttom" onclick="callback()">실행</button>
+    <div>
+        <h2 class="label">모습 변경 전</h2>
+        <div class="figure"></div>
+        <h2 class="label">모습 변경 전</h2>
+        <div class="figure"></div>
+    </div>
+</body>
+</html>

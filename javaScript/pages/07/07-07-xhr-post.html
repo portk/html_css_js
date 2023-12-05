@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- new api인 ajax 권장 -->
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = callback;
+        xhr.open('post', 'http://ggoreb.com/ajax/html/data2.jsp');
+        // xhr.setRequestHeader('key', 'value');
+// 
+        // const formData = new Formdata();
+        // formData.append('key', 'value');
+        // xhr.send(formData);
+
+        xhr.send()
+
+        function callback(){
+            if ( xhr.readyState==4 ){
+                if ( xhr.status == 200 ) {
+                    let result = xhr.response;
+                    console.log(result);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

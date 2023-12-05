@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child > u:nth-child(odd) /* 2n-1도 가능 */ {
+            background-color: coral;
+        }
+        .type > u:nth-of-type(2n) /* even도 가능 */ {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="child">
+        <u>1번</u>
+        <u>2번</u>
+        <u>3번</u>
+        <u>4번</u>
+        <u>5번</u>
+        <u>6번</u>
+    </div>
+    <div class="type">
+        <u>1번</u> 
+        <u>2번</u> 
+        <u>3번</u>
+        <u>4번</u> 
+        <u>5번</u> 
+        <u>6번</u>
+    </div>
+</body>
+</html>

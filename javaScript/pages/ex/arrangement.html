@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper > div {
+            display: flex;
+        }
+        .left { margin: 10px 30px;}
+        .center{
+            display: flex;
+            margin:10px 30px;
+        }
+        .right {
+            display: flex;
+            margin:10px 30px;
+        }
+        p {
+            width: 130px;
+            height: 30px;
+            margin:10px;
+            padding:15px;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="first"><div class="left"><p>김태영</p></div><div class="center"><p>이재빈</p><p>김나영</p><p>김담향</p></div><div class="right"><p>김건우</p></div></div>
+        <div class="second"><div class="left"><p>김동일</p></div><div class="center"><p>조정아</p><p>(공석)</p><p>이윤주</p></div><div class="right"><p>강다솜</p><p>명하영</p></div></div>
+        <div class="third"><div class="left"><p>이승찬</p></div><div class="center"><p>(공석)</p><p>김수호</p><p>윤여록</p></div><div class="right"><p>조가영</p></div></div>
+        <div class="fourth"><div class="left"><p>유준하</p></div><div class="center"><p>강건희</p><p>장성호</p><p>박정현</p></div><div class="right"><p>임태환</p></div></div>
+    </div>
+</body>
+<script>
+    seatList = document.querySelectorAll('p');
+    let shake = (seatList) => {
+        let beforeList=[];
+        seatList.forEach((item) => {
+            beforeList.push(item.innerText);
+        });
+        beforeList.sort(() => Math.random()-0.5);
+        return beforeList;
+    }
+
+    afterList=shake(seatList);
+
+    //마지막 for문만 이상해진다.
+    for (let i = 0; i < afterList.length; i++){
+        seatList[i].innerText = afterList[i];
+        //console.log(beforeList[i].innerText);
+    }
+</script>
+</html>

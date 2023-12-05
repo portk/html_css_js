@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="pet" id="강아지" value="강아지"><label for="강아지">강아지</label>
+    <input type="radio" name="pet" id="고양이" value="고양이"><label for="고양이">고양이</label>
+    <input type="radio" name="pet" id="햄스터" value="햄스터"><label for="햄스터">햄스터</label>
+    <input type="radio" name="pet" id="기타" value="기타"><label for="기타">기타</label>
+    <hr>
+    <h3 id="output"></h3>
+</body>
+<script>
+    const output = document.querySelector('#output');
+    const radios = document.querySelectorAll('[name=pet]');
+
+    for (let i = 0; i < radios.length ; i++){
+        radios[i].addEventListener('change', () => {
+            output.textContent = `선택한 동물은 ${radios[i].value} 입니다.`;
+        })
+    }
+//    radios.forEach((radio)=>{
+//        radio.addEventListener('change',() => {
+//            output.textContent = `선택된 동물은 ${radio.value}`;
+//        });
+//    });
+</script>
+</html>

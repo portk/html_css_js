@@ -1,0 +1,11 @@
+body {
+    background-image: url("../images/cat1.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+p {
+    background: rgba(255, 255, 255, 0.39);
+    width: 600px;
+    line-height: 180%;
+}

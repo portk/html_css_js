@@ -1,0 +1,14 @@
+#a, #b, #c {
+    width:100px;
+    height:60px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#b {
+    position: relative;
+    left:60px;
+    top: 30px;
+}

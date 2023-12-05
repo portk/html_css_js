@@ -1,0 +1,17 @@
+#a, #b, #c {
+    width:100px;
+    height:60px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+}
+
+#b {
+    position: absolute;
+    left:60px;
+    top: 130px;
+}
+
+/* position : absolute 는 상위 박스의 margin이나 padding의 영향을 받지 않는다. */

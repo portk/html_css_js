@@ -1,0 +1,5 @@
+*:not([id='back'],a) {
+    color: green;
+    margin: 0;
+    padding: 0;
+}

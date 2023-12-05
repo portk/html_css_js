@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Animal {
+            constructor(name) {
+                this.name = name;
+                console.log();
+            }
+            speak() {
+                console.log(`${this.name} make a noise.`);
+            }
+        }
+        class Dog extends Animal {
+            speak() {
+                console.log(`${this.name} 멍멍`)
+            }
+        }
+        class Cat extends Animal {
+            speak() {
+                console.log(`${this.name} 야옹`)
+            }
+        }
+        const shushu = new Animal("shushu");
+        const dog = new Dog (`choco`);
+        const cat = new Cat ('nero')
+        shushu.speak();
+        dog.speak();
+        cat.speak();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

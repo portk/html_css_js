@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- new api인 ajax 권장 -->
+    <div id="content"></div>
+    <script>
+        const xhr = new  XMLHttpRequest();
+        xhr.onreadystatechange = callback;
+        xhr.open("get","https://gjlms.korchamhrd.net"); // html page <form> <input>value</input> </form>
+        xhr.send(null);
+        function callback(){
+            if(xhr.readyState==4){
+                if (xhr.status==200){
+                    let result = xhr.response;
+                    document.getElementById('content').innerHTML = result;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

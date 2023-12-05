@@ -1,0 +1,42 @@
+h3 {
+    margin:30px;
+}
+
+table {
+    margin:30px;
+    padding:20px;
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+th {
+    text-align: left;
+}
+td {
+    padding-left: 20px;
+    height: 40px;
+}
+td input:not([type = radio],[type=checkbox]) {
+    height: 30px;
+    width: 200px;
+}
+td select {
+    height: 30px;
+    width: 200px;
+}
+#emal {
+    width: 100px;
+}
+
+textarea {
+    width: 320px;
+    height: 120px;
+}
+.action-form {
+    margin-left: 300px;
+    align-content: right;
+}
+
+.action-form input {
+    height: 40px;
+    width: 100px;
+}

@@ -1,0 +1,23 @@
+#a, #b, #c {
+    width:100px;
+    height:60px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+}
+
+#b {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#parent {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    border: solid 1px red;
+    padding: 90px 0 0 60px;;
+}

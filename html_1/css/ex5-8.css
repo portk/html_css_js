@@ -1,0 +1,23 @@
+body {
+    margin:0px;
+}
+
+h3, p:not([id = 'back']) {
+    width: 400px;
+    margin: 10px;
+    border: solid 1px black;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #aaaaaa;
+}
+
+h3{
+    text-align: center;
+}
+
+div {
+    margin: 20px;
+    width: 460px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 50px #666666;
+}

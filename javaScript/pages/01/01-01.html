@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>기본사용법</title>
+</head>
+<body>
+    <p id="demo">text</p>
+    <button type="button" onclick="change()">change</button>
+    <button type="button" onclick="setBack()">setback</button>
+    <script>
+        function change() {
+            document.getElementById("demo").innerHTML = "change";
+        }
+        function setBack() {
+            document.getElementById('demo').innerHTML = "text";
+        }
+    </script>
+</body>
+</html>

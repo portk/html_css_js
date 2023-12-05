@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+#boil{
+    color:red;
+}
+
+#p-boil{
+    color:blue;
+}
+
+
+#fry{
+    color:blue;
+}
+
+#p-fry{
+    color:red;
+}

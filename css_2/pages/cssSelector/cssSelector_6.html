@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > div {
+            font-size:1.7em;
+        }
+        body > ul { width: 250px;}
+        ul { list-style: none; }
+        ul > li { background-color: khaki; }
+        li > div { border : solid 1px  red;}
+        li > ul {text-decoration: line-through; font-style:italic;}
+    </style>
+</head>
+<body>
+    <div>자손 선택자</div>
+    <ul>
+        <li>
+            <div>Item 1</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li>
+            <div>Item 2</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

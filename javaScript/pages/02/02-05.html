@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const char = 'c';
+        const username = "developer";
+
+        const greeting = "hello" + username;
+        console.log(`value: ${greeting}, type: ${typeof greeting}`);
+
+        const template = `hi ${username}`; //template literals
+        console.log(`value: ${template}, type: ${typeof template}`);
+
+        const str = "JavaScript";   // 자바에서 character(char)는 ''로, string(str)은 ""로 한다. 그걸 따라서 하는게 다양하게 쓰기 편하다.
+        console.log(`str: ${str}`);
+        console.log(`str[0]: ${str[0]}`);
+        console.log(`str[str.length-1]: ${str[str.length-1]}`);
+        console.log(`str.substring(0, 4): ${str.substring(0, 4)}`);
+        console.log(`str.slice(-6, str.length): ${str.slice(-6, str.length)}`);
+        console.log(`str.indexOf('S'): ${str.indexOf('S')}`);
+        console.log(`str.split('S'): ${str.split('S')}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"> inch
+    <button>계산</button>
+    <p></p>
+</body>
+<script>
+    btn=document.querySelector('button');
+    val=document.querySelector('input');
+    p=document.querySelector('p');
+    // 변환 공식 : inch * 2.54 => cm
+    btn.addEventListener("click",() => {
+        p.innerHTML = val.value*2.54 +" cm";
+    });
+</script>
+</html>

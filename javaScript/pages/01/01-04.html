@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function openPopup() {
+            const popup = window.open('','','width=300px height=150px');
+            popup.document.write('<h1>Popup</h1>')
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onClick="openPopup()">팝업</button>
+    <button type="button" onClick="document.write(5 + 6)">계산</button>
+</body>
+</html>

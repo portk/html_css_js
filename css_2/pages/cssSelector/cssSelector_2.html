@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector2</title>
+    <style>
+        h5[title] { background-color:red; }
+        h5[class ~=header]{ background-color: yellow; }
+        h5[class ^= con] {background-color: lightblue;}
+        h5[class $= esc] {background-color: orange;}
+        h5[class *= tiv] {background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h5>h5 제목</h5>
+    <h5 title="제목1">h5 제목 1</h5> <!--가상의 속성 red-->
+    <h5 class="title header">h5 제목 2</h5> <!-- header문자열 자식 포함 yellow -->
+    <h5 class="content">h5 제목 3</h5> <!-- 시작 문자열이 con lightblue -->
+    <h5 class="desc">h5 제목 4</h5> <!-- 끝 문자열이 esc orange -->
+    <h5 class="active">h5 제목 5</h5> <!-- 포함하는 문자열 tiv aqua-->
+</body>
+</html>

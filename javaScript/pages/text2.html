@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const agent = window.navigator.userAgent.toLowerCase();
+        let browserName;
+        switch (true) {
+            case agent.indexOf("edge") > -1:
+                browserName = "MS Edge";
+                break;
+                case agent.indexOf("edg/") > -1:
+                browserName = "Edge (chromium based)";
+                break;
+                case agent.indexOf("opr") > -1:
+                browserName = "Opera";
+                break;
+                case agent.indexOf("chrome") > -1:
+                browserName = "Chrome";
+                break;
+                case agent.indexOf("trident") > -1:
+                browserName = "MS IE";
+                break;
+                case agent.indexOf("firefox") > -1:
+                browserName = "Mozilla Firefox";
+                break;
+                case agent.indexOf("safari") > -1:
+                browserName = "Safari";
+                break;
+                default:agentbrowserName = "other";
+        }
+        document.write(browserName);
+    </script>
+</body>
+</html>

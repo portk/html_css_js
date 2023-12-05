@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function execute() {
+            const simplePrint1 = function simplePrint() {
+                console.log('simplePrint!');
+            }
+
+            const simplePrint2 = () => 
+                console.log('simplePrint!!')
+
+            const simplePrint3 = () => {
+                console.log('simplePrint!!!')
+            }
+            const add = function(a,b) {
+                return a+b;
+            }
+            const add2 = (a, b) => a+b;
+
+            simplePrint1();
+            simplePrint2();
+            simplePrint3();
+            console.log(add(3,4));
+            console.log(add2(4,5));
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

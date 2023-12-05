@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span { font-weight: bold; color:red; }
+    </style>
+</head>
+<body>
+    위도: <span id="lat"></span><br>
+    경도: <span id="lng"></span>
+</body>
+<script>
+    navigator.geolocation.getCurrentPosition(
+        function (position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            document.querySelector('#lat').innerText=lat;
+            document.querySelector('#lng').innerText=lng;
+        }
+    );
+</script>
+</html>

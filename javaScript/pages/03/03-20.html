@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function execute() {
+            const selected = [];
+            
+            while(selected.length < 3){
+                const num = parseInt(Math.random() * 10) + 1;
+                if(selected.indexOf(num) == -1) {
+                    selected.push(num);
+                }      
+            }
+            console.log('정렬 전')
+            console.log(selected);
+
+            selected.sort();
+            console.log('정렬 후')
+            console.log(selected);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="execute()">실행</button>
+</body>
+</html>

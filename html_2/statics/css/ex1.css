@@ -1,0 +1,16 @@
+.card, #container {
+    margin:10px;
+    border: solid 1px black;
+}
+
+.card-img-top {
+    width: 25em;
+    height: 30em;
+}
+
+.card-body {
+    text-align: center;
+    width: 25em;
+    border: solid 1px black;
+    padding: 1em 0 1em;
+}

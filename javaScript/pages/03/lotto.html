@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 현실적인 문제로 돌아가다 멈춤
+        function execute() {
+            
+            let lotto = [1,14,18,26,37,41]
+            let myLotto = [];
+            while (myLotto != lotto) {
+                myLotto = [];
+                while(myLotto.length < 6){
+                    var num = parseInt(Math.random() * 45) + 1;
+                    if(myLotto.indexOf(num) == -1) {
+                        myLotto.push(num);
+                    }      
+                }
+                myLotto.sort((a,b) => a-b);
+            }
+            if (myLotto.toString() == lotto) {
+                console.log(`내 번호 ${myLotto}로 당첨되었습니다.`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="execute()">실행</button>
+</body>
+</html>

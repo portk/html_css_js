@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    전역변수와 로컬변수
+    일반적으로 단위로 나눈다.
+
+    class라는 객체가 있음.
+
+    main
+        변수
+        method(main을 도와주기 위해서 내부에서 사용하는 함수)
+            변수
+
+    {} 안에서 끝나는 변수는 로컬 변수
+       밖에서도 읽어지는 변수는 글로벌 변수라고 한다.
+    
+    <script>
+        let globalVariable = 'javascript';
+            {
+                let name1 = 'javascript';
+                var name2 = 'javascript';
+                const name3 = 'javascript';
+                
+                console.log('name1 : ' + name1);
+                console.log('name2 : ' + name2);
+                console.log('name3 : ' + name3);
+                console.log('globalVariable : ' + globalVariable);
+            }
+        // console.log('name1 : ' + name1); let은 밖으로 못나옴
+        console.log('name2 : ' + name2);
+        // console.log('name3 : ' + name3); const도 밖으로 못나옴
+        console.log('globalVariable : ' + globalVariable);
+    </script>
+</body>
+</html>

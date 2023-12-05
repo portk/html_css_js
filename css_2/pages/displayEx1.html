@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            display: none;
+        }
+        #a:checked ~ [name='info_a'] { display: inline; }
+        #b:checked ~ [name='info_b'] { display: inline; }
+        #c:checked ~ [name='info_c'] { display: inline; }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="a">
+    <label for="a">정보 1</label>
+    <textarea name="info_a"></textarea><br>
+    <input type="checkbox" id="b">
+    <label for="b">정보 2</label>
+    <textarea name="info_b"></textarea><br>
+    <input type="checkbox" id="c">
+    <label for="c">정보 3</label>
+    <textarea name="info_c"></textarea>
+</body>
+</html>

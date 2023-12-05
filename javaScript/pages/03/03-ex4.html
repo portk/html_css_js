@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #player{ width: 300px;}
+    </style>
+    <script defer>
+        function RSP() {
+            const map = ['가위', '바위', '보']
+            const player = (document.getElementById('player').value % 3);
+            const com = parseInt(Math.random() * 3); //new를 찍어야 하는 것은 heap으로 넣어야하는 동적 클래스이고, Math는 스택영역으로 들어가는 정적 클래스이다.
+            console.log(`player: ${map[player]}, com: ${map[com]}`);
+
+            let result = '';
+
+            if ( player == com ) {
+                result = '비겼다';
+            } else if ( player + 1 == com ) {
+                result = 'com 승';
+            } else {
+                result = 'player 승';
+            }
+
+            console.log(`결과: ${result}`);
+
+            document.getElementById('player').value=null;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id ='player' placeholder="숫자를 입력하세요(0: 가위, 1: 바위, 2: 보)">
+    <button onclick="RSP()">내기</button>
+</body>
+</html>

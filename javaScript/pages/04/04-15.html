@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sequence() {
+            let seq = 0;
+            return function() {
+                return ++seq;
+            };
+
+        }
+        const seq = sequence();
+        console.log( seq() );
+        console.log( seq() );
+        console.log( seq() );
+        console.log( seq() );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

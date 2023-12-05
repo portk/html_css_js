@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const formData = new FormData();
+        formData.append('key','value');
+        const data = axios({
+            url:'주소',
+            method:'post',
+            data: formData,
+            headers: {
+                'key': 'value'
+            }
+        });
+        data.then((result) => {console.log(result.data);});
+    </script>
+</body>
+</html>

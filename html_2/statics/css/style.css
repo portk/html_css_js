@@ -1,0 +1,35 @@
+* {
+    margin: 0 auto;
+}
+
+#button {
+    margin: 3px 10px;
+    width:250px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(128, 92, 153);
+    color:white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding:10px;
+}
+
+#button:hover {
+    background-color: white;
+    color: rgb(118, 63, 155);
+    box-shadow: 1px, 1px, 5px gray;
+}
+
+li {
+    list-style-type:none;
+    margin-top: 3px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: white;
+    color:blue;
+}

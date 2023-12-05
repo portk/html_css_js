@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KepcoA</title>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded",() => {
+            const obj = document.querySelector('h1');
+            document.body.removeChild(obj);
+        })
+    </script> -->
+</head>
+<body>
+    <h1>살고싶어!!</h1>
+    <script>
+        ///const obj = document.createElement('h1');
+        ///obj.textContent = '어라?';
+        ///document.body.appendChild(obj);
+        const obj = document.querySelector('h1');
+        obj.addEventListener('click',() => {document.body.removeChild(obj);});
+    </script>
+</body>
+</html>

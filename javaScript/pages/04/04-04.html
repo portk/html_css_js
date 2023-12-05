@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showMessage(message, from='unknown') {
+            console.log(`${message} by ${from}`);
+        }
+        function printAll(...args) {
+            for(let i = 0; i < args.length; i++) {
+                console.log(args[i]);
+            }
+            for (const arg of args) {
+                console.log(arg);
+            }
+            args.forEach((arg) => console.log(arg));
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="showMessage('Hi!')">showMessage</button>
+    <button type="button" onclick="printAll('java','script','html/css')">printAll</button>
+</body>
+</html>

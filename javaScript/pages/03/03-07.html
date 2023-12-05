@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    console.log(`10 < 6 -> ${10 < 6}`);
+    console.log(`10 <= 6 -> ${10 <= 6}`);
+    console.log(`10 > 6 -> ${10 > 6}`);
+    console.log(`10 >= 6 -> ${10 >= 6}`);
+
+    const stringFive = '5';
+    const numberFive = 5;
+    // 느슨한 비교 (자료형 자동 변환)
+    console.log(stringFive == numberFive);
+    console.log(stringFive != numberFive);
+    // 엄격한 비교
+    console.log(stringFive === numberFive);
+    console.log(stringFive !== numberFive);
+
+    const dev1 = { name: 'dev'};
+    const dev2 = { name: 'dev'};
+    const dev3 = dev1;
+
+    console.log(dev1 == dev2);
+    console.log(dev1 === dev2);
+    console.log(dev1 === dev3);
+
+</body>
+</html>

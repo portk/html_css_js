@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+h3 {
+    margin: 50px 40px 30px 40px;
+    border: solid 1px green;
+}
+
+p:not([id = 'back']) {
+    margin: 50px 40px;
+    border: solid 1px green;
+}

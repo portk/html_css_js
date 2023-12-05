@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class UserStorage {
+            loginUser(id, password, onSuccess, onError) {
+                // id, password를 서버로 전송하여 가입 정보 인증
+                setTimeout(() => {
+                    if ((id === 'java' && password === 'script') ||
+                    (id === 'call' && password ==='back')) {
+                        onSuccess(id);
+                    } else {
+                        onError(new Error('not found'));
+                    }
+                }, 2000);
+            }
+
+            getRoles(id, onSuccesss, onError) {
+                // 로그인 성공 시 id를 서버로 전송하여 권한 확인
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

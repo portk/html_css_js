@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            transition-property: "left","top";
+            transition-duration: 150ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐎</h1>
+</body>
+<script>
+    const target = document.querySelector('h1');
+    target.style.position = 'absolute';
+    let [x,y] = [30,20];
+    const block = 10;
+    const move = () => {
+        target.style.left = `${x * block}px`;
+        target.style.top = `${y * block}px`;
+    };
+    move();
+
+    const [left, up, right, down] = [37, 38, 39, 40];
+    document.body.addEventListener('keydown', (event) => {
+        switch (event.keyCode) {
+            case left : x -= 1; break;
+            case up : y -= 1; break;
+            case right : x += 1; break;
+            case down : y += 1; break;
+        }
+        move();
+    });
+</script>
+</html>

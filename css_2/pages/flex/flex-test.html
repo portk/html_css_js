@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+        }
+        .row {
+            grid-row:1; grid-column:1;
+            margin-right: 10px;
+        }
+        .col{
+            grid-row:1; grid-column:2;
+        }
+        .row2 {
+            grid-row:2; grid-column:1;
+            margin-right: 10px;
+        }
+        .col2 {
+            grid-row:2; grid-column:2;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: lightgrey;
+            flex-direction: row;
+            height : 100px;
+        }
+        .flex-item {
+            background-color: lightcyan;
+            border: solid 1px red;
+        }
+        .flex-container2 {
+            display: flex;
+            background-color: lightgrey;
+            flex-direction: row;
+            align-items: center;
+            height : 100px;
+        }
+
+        .jc-center {
+            justify-content: center;
+        }
+        .jc-end{
+            justify-content:flex-end
+        }
+        .jc-around{
+            justify-content: space-around;
+        }
+        .jc-between{
+            justify-content: space-between;
+        }
+        .jc-evenly{
+            justify-content: space-evenly;
+        }
+        .jc-stretch{
+            justify-content: stretch;
+        }
+        .ai-start{
+            align-items: flex-start;
+        }
+        .ai-end{
+            align-items: flex-end;
+        }
+        .ai-center{
+            align-items: center;
+        }
+        .ai-stretch{
+            align-items: stretch;
+        }
+        .c-direction{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <h2>row 방향</h2>
+            <h3>기본</h3>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: center</h3>
+            <div class="flex-container jc-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: flex-end</h3>
+            <div class="flex-container jc-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-around</h3>
+            <div class="flex-container jc-around">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-between</h3>
+            <div class="flex-container jc-between">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-evenly</h3>
+            <div class="flex-container jc-evenly">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: stretch</h3>
+            <div class="flex-container jc-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-start</h3>
+            <div class="flex-container ai-start">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-end</h3>
+            <div class="flex-container ai-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:center</h3>
+            <div class="flex-container ai-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:stretch</h3>
+            <div class="flex-container ai-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </div>
+        <div class="col">
+            <h2>column 방향</h2>
+            <h3>기본</h3>
+            <div class="flex-container c-direction">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: center</h3>
+            <div class="flex-container c-direction jc-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: flex-end</h3>
+            <div class="flex-container c-direction jc-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-around</h3>
+            <div class="flex-container c-direction jc-around">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-between</h3>
+            <div class="flex-container c-direction jc-between">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-evenly</h3>
+            <div class="flex-container c-direction jc-evenly">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: stretch</h3>
+            <div class="flex-container c-direction jc-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-start</h3>
+            <div class="flex-container c-direction ai-start">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-end</h3>
+            <div class="flex-container c-direction ai-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:center</h3>
+            <div class="flex-container c-direction ai-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:stretch</h3>
+            <div class="flex-container c-direction ai-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </div>
+        <div class="row2">
+            <h2>row 방향 + align-items:center</h2>
+            <h3>기본</h3>
+            <div class="flex-container2">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: center</h3>
+            <div class="flex-container2 jc-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: flex-end</h3>
+            <div class="flex-container2 jc-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-around</h3>
+            <div class="flex-container2 jc-around">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-between</h3>
+            <div class="flex-container2 jc-between">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-evenly</h3>
+            <div class="flex-container2 jc-evenly">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: stretch</h3>
+            <div class="flex-container2 jc-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-start</h3>
+            <div class="flex-container2 ai-start">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-end</h3>
+            <div class="flex-container2 ai-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:center</h3>
+            <div class="flex-container2 ai-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:stretch</h3>
+            <div class="flex-container2 ai-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </div>
+        <div class="col2">
+            <h2>column 방향 + align-items:center</h2>
+            <h3>기본</h3>
+            <div class="flex-container2 c-direction">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: center</h3>
+            <div class="flex-container2 c-direction jc-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: flex-end</h3>
+            <div class="flex-container2 c-direction jc-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-around</h3>
+            <div class="flex-container2 c-direction jc-around">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-between</h3>
+            <div class="flex-container2 c-direction jc-between">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: space-evenly</h3>
+            <div class="flex-container2 c-direction jc-evenly">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>justify-content: stretch</h3>
+            <div class="flex-container2 c-direction jc-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-start</h3>
+            <div class="flex-container2 c-direction ai-start">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:flex-end</h3>
+            <div class="flex-container2 c-direction ai-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:center</h3>
+            <div class="flex-container2 c-direction ai-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <h3>align-items:stretch</h3>
+            <div class="flex-container2 c-direction ai-stretch">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

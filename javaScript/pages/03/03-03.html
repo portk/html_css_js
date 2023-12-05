@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    전위
+    let counter = 4;
+    const preDecrement = --counter;
+    // counter = counter - 1;
+    // preDecrement = counter;
+    console.log(`preDecrement: ${preDecrement}`);
+    console.log(`counter: ${counter}`);
+
+    후위
+    const postDecrement = counter--;
+    // postDecrement = counter;
+    // counter = counter - 1;
+    console.log(`postDecrement: ${postDecrement}`);
+    console.log(`counter: ${counter}`);
+
+</body>
+</html>

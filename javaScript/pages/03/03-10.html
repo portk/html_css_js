@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const date = new Date();
+        let hour = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+
+        if (hour < 12) {
+            console.log("아침");
+            console.log(`현재시각 : AM ${hour}시 ${min}분 ${sec}초`);
+        }
+        else if ( hour < 18 ) {
+            console.log("점심");
+            console.log(`현재시각 : PM ${hour-12}시 ${min}분 ${sec}초`);
+        }
+        else { 
+            console.log("저녁");
+            console.log(`현재시각 : PM ${hour-12}시 ${min}분 ${sec}초`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

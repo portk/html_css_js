@@ -1,0 +1,26 @@
+ul{
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+}
+
+li{
+    display:inline;
+    margin:20px;
+    font-size:17px;
+}
+
+a:link, a:visited, a:active, ul{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color:orange;
+    text-decoration: underline;
+}
+
+p {
+    background-color: gray;
+}

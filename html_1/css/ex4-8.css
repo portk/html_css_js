@@ -1,0 +1,9 @@
+/* 링크 외에도 버튼 등에 적용 가능함 */
+a:link{
+    text-decoration: none;
+    color:grey;
+    font-size:medium;
+}
+a:visited { color : grey;}
+a:hover {color: orange; text-decoration: underline; font-size: large;}
+a:active {color : red;}

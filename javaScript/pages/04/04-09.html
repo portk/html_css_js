@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function quiz(answer, printYes, printNo) {
+            if (answer === 'love you') {
+                printYes();
+            }else {
+                printNo();
+            }
+        }
+        const printYes = function() {
+            console.log('yes!');
+        }
+        const printNo = function() {
+            console.log('no!');
+        }
+        quiz('wrong',printYes, printNo);
+        quiz('love you',printYes, printNo);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

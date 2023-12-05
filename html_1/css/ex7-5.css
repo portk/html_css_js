@@ -1,0 +1,35 @@
+span {
+    background-color:yellow;
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
+
+#b {
+    background-color: red;
+    display:block;
+}
+
+#c {
+    background-color: green;
+    display:inline-block;
+}
+
+.sub {
+    display: inline-block;
+    width:100px;
+    height:100px;
+}
+
+#main-1 {
+    background-color: red;
+}
+
+#main-2 {
+    background-color: yellow;
+}
+
+#main-3 {
+    background-color: green;
+}

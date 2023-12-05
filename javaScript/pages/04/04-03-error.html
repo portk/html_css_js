@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function execute() {
+            const data = [
+            { 'name' : 'A', 'score': 77},
+            { 'name' : 'B', 'score': 88},
+            { 'name' : 'C', 'score': 66},
+            { 'name' : 'D', 'score': 55},
+            ];
+
+            function checkData(data){
+                const result = [];
+                const person = {};
+                
+                data.forEach(value => {
+                    person['name'] = value.name;
+                    person['score'] = value.score;
+                    person['pass'] = value.score > 60 ? true : false;
+                    result.push(person);
+                });
+                return result;
+            }
+
+            result = checkData(data);
+            console.log(result)
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="execute()">실행</button>
+</body>
+</html>

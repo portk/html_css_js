@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #button {
+                height: 130px;
+                width: 200px;
+                font-size:xxx-large;
+                color: rgb(120, 233, 120);
+                background-color: white;
+                font-weight:bold;
+                border:none;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="https://naver.com"><input id="button" type="button" value="NAVER"></a>
+        </div>
+        <script>
+            var button=document.querySelector('#button');
+            button.addEventListener("mouseover",function() { button.style.color = "rgb(196,226,169)";});
+            button.addEventListener("mouseout",function() { button.style.color = "rgb(120,233,120)";});
+        </script>
+    </body>
+</html>

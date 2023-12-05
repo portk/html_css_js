@@ -1,0 +1,17 @@
+.green-bold {
+    color:green;
+    font-weight: bold;
+}
+
+.red-underline{
+    color:red;
+    text-decoration: underline;
+}
+
+.contents {
+    margin-left: 10px;
+    border: solid 1px black;
+    box-shadow: 5px 5px 30px #666666;
+    padding:20px;
+    width: 800px;
+}

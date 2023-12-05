@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function getApple() {
+            await delay(4000);
+            return '🍎';
+        }
+        async function getKiwi() {
+            await delay(1000);
+            return '🥝';
+        }
+        async function getMango() {
+            await delay(6000);
+            return '🥭';
+        }
+        async function sell() {
+            // const apple = await getApple();
+            // const kiwi = await getKiwi();
+            // const mango = await getMango();
+            const applePromise = getApple();
+            const kiwiPromise = getKiwi();
+            const mangoPromise = getMango();
+            const apple = await applePromise;
+            const kiwi = await kiwiPromise;
+            const mango = await mangoPromise;
+            return `${apple} + ${kiwi} + ${mango}`
+        }
+        sell().then(res => console.log(res));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

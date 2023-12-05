@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>글자 수 : 0</h3>
+    <input type="text" name="title" id="title" autofocus>
+</body>
+<script>
+    const h3 = document.querySelector('h3');
+    const input = document.querySelector('input');
+    //원래는 input대신 keyup, 개인적인 감성에는 input이 더 좋아서 input으로 두었다.
+    //메모리 최적화를 위해서는 keyup이 당연히 더 좋을 것이다.
+    input.addEventListener("input", (event) => {
+        const length = input.value.length;
+        h3.innerHTML = `글자수 : ${length}`;
+    });
+</script>
+</html>

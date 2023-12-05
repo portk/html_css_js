@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ajax = fetch('http://ggoreb.com/ajax/html/data1.jsp');
+        ajax.then((response) => { return response.text(); }).then(function(result){ console.log(result); });
+    </script>
+</body>
+</html>

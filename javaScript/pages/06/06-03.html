@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const animals = ['🐶', '🐱', '🐷'];
+        
+        for (const key in animals) {
+            console.log(key);
+        }
+        for (const value of animals) {
+            console.log(value);
+        }
+        animals.forEach(function(animal, index, array){
+            console.log(`${animal} | ${index} | ${array}`);
+        });
+        animals.forEach((animal, index, array) => {
+            console.log(`${animal} | ${index} | ${array}`);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

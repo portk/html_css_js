@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callback(position) {
+            const lat = position.coords.latitude;
+            const lot = position.coords.longitude;
+            let body = document.body;
+
+            html=`<h2>당신의 위치의 위도는 : ${lat}, 경도는 ${lot}</h2>`;
+            body.innerHTML=html
+        }
+        navigator.geolocation.getCurrentPosition(callback);
+    </script>
+</head>
+<body>
+    <h2 class="label"></h2>
+</body>
+</html>
