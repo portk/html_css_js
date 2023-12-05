@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 로그인에 필요한 조건은 따로 설정해두지 않았습니다 -->
+    <!-- 실제 인스타의 것으로 연결된 링크들이 있습니다. 누르시고 주소창을 확인해주세요 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram clone</title>
+    <link href="../statics/images/De-Dwpd5CHc.png" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="../statics/css/insta1.css" rel="stylesheet" type="text/css">
+    <script defer src="../statics/script/insta1.js"></script>
+    <style>
+        #mobile{
+            background-image: url('../statics/images/screenshot1.png');
+        }
+    </style>
+</head>
+<body>
+    <div class='main'>
+        <div class="image"><div id='mobile'></div></div>
+        <div class="rightSide">
+            <div class="wrapper">
+                <h2>instagram</h2>
+                <input id="mail" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                <input id="pw" type="password" placeholder="비밀번호">
+                <button id="login" type="button" onclick="login()">로그인</button>
+                <div class="or"><hr class="line1" align="left"><p class="orW">또는</p><hr class="line2" align="right"></div>
+                <button id="withFacebook" type="button" onclick="facebook()"><img src="../statics/images/facebook-icon-26.png" width=15px> Facebook으로 로그인</button>
+                <a id="findPW" href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?</a>
+            </div>
+            <p class="signUp">계정이 없으신가요? <a href="https://www.instagram.com/accounts/emailsignup/" id="signUpLink">가입하기</a></p>
+            <p class="downText">앱을 다운로드하세요.</p>
+            <div class="download"></div>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.instagram.android%26referrer%3Dig_mid%253D46D3F7ED-956C-4BD1-8225-6890B296F92E%2526utm_campaign%253DloginPage%2526utm_content%253Dlo%2526utm_source%253Dinstagramweb%2526utm_medium%253Dqr_code&e=AT2W2T00jWyVUGt0htqhJTL0YEqVm2Ncl_HsO54ve6_d85WEV-K0D8OJAIZepwjEJ_JTxZNU71gsMPt63T4h8TCY59iiwMoiOdiroieyc_ZVvHMfywiUOXpokCwg1F_JnMhuyM7HP2a2Ol_IonWV1g"><img class="playStore" src="https://static.cdninstagram.com/rsrc.php/v3/ye/r/UtJtFmFLCiD.png"></a>
+                <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=2533%2C323%2C1122%2C893"><img class="Microsoft" src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/LBxTdceDfgS.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class='footer'>
+        <div class="info">
+            <a href="https://about.meta.com/">Meta</a>
+            <a href="https://about.instagram.com/">소개</a>
+            <a href="https://about.instagram.com/blog/">블로그</a>
+            <a href="https://www.instagram.com/about/jobs/">채용 정보</a>
+            <a href="https://help.instagram.com/">도움말</a>
+            <a href="https://developers.facebook.com/docs/instagram">API</a>
+            <a href="https://www.instagram.com/legal/privacy/">개인정보처리방침</a>
+            <a href="https://www.instagram.com/legal/terms/">약관</a>
+            <a href="https://www.instagram.com/explore/locations/">위치</a>
+            <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+            <a href="https://www.threads.net/">Threads</a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fhelp%2Finstagram%2F261704639352628&e=AT2-yQld1Xm_gtha7qpyf66vK1xakIH7bidjDl4OzIJ9gVVPsvFC2HZSBhjb83id7GtUdI_YhF0YtzC2POhNseH386UswTFoFbsO-jKJWGYIMYIbiJVfohP5v0eyvyLoT25DfDjJDgmfndPqFJfBqg">연락처 업로드 & 비사용자</a>
+            <a href="https://about.meta.com/technologies/meta-verified/">Meta Verified</a>
+        </div>
+        <div class="etc">
+            <select name="language" id="language">
+                <option value="ko" selected>한국어</option>
+                <option value="ko">한국어</option>
+                <option value="ko">한국어</option>
+                <option value="ko">한국어</option>
+            </select>
+            <span>&copy; 2023 Instagram from Meta</span>
+        </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,125 @@
+.sideBar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 0;
+    width:220px;
+    height: 98vh;
+    margin: 0;
+    padding: 8px 12px 20px 12px;
+    border-right: 1px solid lightgray;
+}
+.menu {
+    height: 80vh;
+}
+
+.sideTitle {
+    margin-left:10px;
+    margin-bottom: 30px;
+}
+.sideTitle > h2{
+    font-family: 'Yesteryear';
+    font-size: 30px;
+    font-weight: 300;
+}
+.sideTitle > svg {
+    margin-left: 2px;
+    display: none;
+}
+
+.menuItem{
+    display: flex;
+    height: 45px;
+    margin: 8px;
+    align-items: center;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition:0.3s;
+}
+
+.more {
+    width:260px;
+    border-radius: 30px;
+    position:fixed;
+    bottom:70px;
+    left:15px;
+    box-shadow: 1px 1px 20px lightgrey;
+}
+
+.moreMenu {
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size:14px;
+    font-weight: 600;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.more1 > .moreMenu{
+    height:30px;
+}
+.more2 > .moreMenu{
+    height:30px;
+    padding-left:20px;
+    margin:8px;
+}
+.more{
+    background-color: #efefef;
+}
+.more1{
+    margin-bottom: 6px;
+    padding:7px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: white;
+}
+.more2 {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    padding: 1px;
+}
+.more2 > hr{
+    border: 1px solid #efefef;
+}
+
+.menuIcon{
+    width:40px;
+    height: 40px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem > p, .moreMenu > p{
+    margin-left: 10px;
+    width:155px;
+}
+
+.menuItem:hover, .moreMenu:hover{
+    background-color: #efefef;
+}
+
+.more {
+    display:none;
+}
+
+@media (max-width: 1265px) {
+    .menuItem > p {
+        display: none;
+    }
+    .sideBar {
+        width: 60px;
+    }
+    .sideTitle > h2 {
+        display: none;
+    }
+    .sideTitle > svg {
+        display: inherit;
+    }
+}

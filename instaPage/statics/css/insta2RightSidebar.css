@@ -1,0 +1,153 @@
+.rightSidebar {
+    order: 3;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    order:1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#profileImg {
+    background-image: url('../images/profile.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+.user {
+    margin-left: 10px;
+}
+#userId, #userName {
+    width: 200px;
+}
+#userId{
+    font-size: 14px;
+    font-weight: bold;
+}
+#userName {
+    font-size: 13px;
+    color:gray;
+}
+#changeAccount, #changeAccount:visited {
+    font-size: 12px;
+    margin-left: 5px;
+    text-decoration: none;
+    color:rgb(32, 180, 224);
+    font-weight: bold;
+}
+#changeAccount:active {
+    color:rgb(93, 196, 228);
+}
+
+.recommand {
+    order:2;
+    margin-top: 10px;
+}
+.recommandHead{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+.recommandHead1{
+    font-size: 14px;
+    font-weight: bold;
+    color:grey;
+}
+.recommandHead2{
+    font-size: 12px;
+}
+#recommandAll, #recommandAll:visited {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#recommandAll:hover{
+    color:grey;
+}
+
+.recommandBox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.recommandProfile{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.recommandAccount {
+    margin-left:10px;
+}
+.recommandId, .recommandReason {
+    width: 190px;
+}
+.recommandId{
+    font-size: 14px;
+    font-weight: bold;
+}
+.recommandReason{
+    font-size: 12px;
+}
+.followButton > a, .followButton > a:visited{
+    font-size: 12px;
+    text-decoration: none;
+    color:rgb(20, 168, 194);
+    font-weight: bold;
+}
+.followButton > a:hover {
+    color:darkblue;
+}
+.followButton > a:active {
+    color:rgb(85, 120, 172);
+}
+
+.footer {
+    order:3;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:left;
+    width: 290px;
+    margin-top:40px;
+}
+.info {
+    font-size: 12px;
+    color:lightgray;
+}
+.info > a, .info > a:visited {
+    color:lightgray;
+}
+.info > a > span:hover {
+    text-decoration: underline lightgray 1px;
+}
+.info > a > span {
+    display: inline-block;
+}
+.copy {
+    color:lightgray;
+    font-size:12px;
+}
+
+#recommandProfile1{
+    background-image: url('../images/cat1.png');
+    background-size: 100% 100%;
+}
+#recommandProfile2{
+    background-image: url('../images/cat2.png');
+    background-size: 100% 100%;
+}
+#recommandProfile3{
+    background-image: url('../images/cat3.png');
+    background-size: 100% 100%;
+}
+#recommandProfile4{
+    background-image: url('../images/cat4.jpg');
+    background-size: 100% 100%;
+}
+#recommandProfile5{
+    background-image: url('../images/cat5.jpg');
+    background-size: 100% 100%;
+}
